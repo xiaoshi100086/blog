@@ -12,7 +12,6 @@
   <script src="../../plugin/layui/layui.js"></script>
   <script src="../../plugin/layui_ext/dtree/dtree.js"></script>
   <script src="../../plugin/jstree/dist/jstree.min.js"></script>
-  
 </head>
 <body>
   <!-- 水平导航栏 -->
@@ -48,22 +47,11 @@
     <div class="layui-col-md10">
       <div id="divMarkDown" style="overflow:hidden;">
        <!-- <div id="markdown"/> -->
-       <iframe id="markdown" height="100%" width="80%"></iframe>
+       <iframe id="markdown" height="100%" width="99%" style="border-style:none;"></iframe>
       </div>
     </div>
   </div>
 <script>
-// //一般直接写在一个js文件中
-// layui.use(['layer', 'element', 'form'], function(){
-//   var layer = layui.layer
-//   ,form = layui.form
-//   ,element = layui.element;
-
-//   element.on('nav(tree)', function(elem){
-//     console.log(elem)
-//     layer.msg(elem.text());
-//   });
-// });
 
 layui.config({
   base: '../../plugin/layui_ext/dtree/' //配置 layui 第三方扩展组件存放的基础目录
